@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Directory System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Directory of Banks, Hospitals, and Schools</h1>
+
+<div class="controls">
+    <select id="typeFilter">
+        <option value="">-- Select Type --</option>
+        <option value="all">All Types</option>
+        <option value="Bank">Bank</option>
+        <option value="Hospital">Hospital</option>
+        <option value="School">School</option>
+    </select>
+
+    <input type="text" id="searchBox" placeholder="Search by name..." disabled>
+</div>
+
+<p id="resultCount" class="result-count"></p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="dataTable"></tbody>
+</table>
+
+<h2>Add New Location</h2>
+
+<div class="form-container">
+    <select id="newType">
+        <option value="Bank">Bank</option>
+        <option value="Hospital">Hospital</option>
+        <option value="School">School</option>
+    </select>
+
+    <input type="text" id="newName" placeholder="Name">
+    <input type="text" id="newAddress" placeholder="Address">
+    <input type="text" id="newPhone" placeholder="Phone (optional)">
+    <input type="email" id="newEmail" placeholder="Email (optional)">
+    <button id="addBtn">Add Record</button>
+</div>
+
+<!-- 🔥 ADD FIREBASE SCRIPTS HERE (REQUIRED) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<!-- 🔥 Your script must load AFTER Firebase -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
