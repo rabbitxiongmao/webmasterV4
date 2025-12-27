@@ -65,7 +65,9 @@ function updateTable() {
             r.name.toLowerCase().includes(keyword) ||
             r.address.toLowerCase().includes(keyword) ||
             (r.phone || "").toLowerCase().includes(keyword) ||
-            (r.email || "").toLowerCase().includes(keyword);
+            (r.email || "").toLowerCase().includes(keyword) ||
+            (r.website || "").toLowerCase().includes(keyword) ||
+            (r.hours || "").toLowerCase().includes(keyword);
 
         return matchType && matchName;
     });
@@ -81,6 +83,8 @@ function updateTable() {
                 <td>${r.address}</td>
                 <td>${r.phone || ""}</td>
                 <td>${r.email || ""}</td>
+                <td>${r.website || ""}</td>
+                <td>${r.hours || ""}</td>
             </tr>
         `;
     });
@@ -95,6 +99,8 @@ function addRecord() {
     const address = document.getElementById("newAddress").value.trim();
     const phone = document.getElementById("newPhone").value.trim();
     const email = document.getElementById("newEmail").value.trim();
+    const website = document.getElementById("newWebsite").value.trim();
+    const hours = document.getElementById("newHours").value.trim();
 
     if (!name || !address) {
         alert("Name and Address are required.");
@@ -106,7 +112,9 @@ function addRecord() {
         name,
         address,
         phone,
-        email
+        email,
+        website,
+        hours
     };
 
     // Push into Firebase
@@ -116,6 +124,8 @@ function addRecord() {
         document.getElementById("newAddress").value = "";
         document.getElementById("newPhone").value = "";
         document.getElementById("newEmail").value = "";
+        document.getElementById("newWebsite").value = "";
+        document.getElementById("newHours").value = "";
 
         alert("Record added!");
     });
