@@ -1,68 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Directory System</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Community Resource Hub</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Directory of Emergency & Crisis, Health & Wellness, Food & Basic Needs, Education & Community Events, and Community Support & Services</h1>
-
-<div class="controls">
-    <select id="typeFilter">
-        <option value="">-- Select Type --</option>
-        <option value="all">All Types</option>
-        <option value="Emergency & Crisis">Emergency & Crisis</option>
-        <option value="Health & Wellness">Health & Wellness</option>
-        <option value="Food & Basic Needs">Food & Basic Needs</option>
-        <option value="Education & Community Events">Education & Community Events</option>
-        <option value="Community Support & Services">Community Support & Services</option>
-    </select>
-
-    <input type="text" id="searchBox" placeholder="Search by name..." disabled>
-</div>
-
-<p id="resultCount" class="result-count"></p>
-
-<table>
-    <thead>
-        <tr>
-            <th>Type</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody id="dataTable"></tbody>
-</table>
-
-<h2>Add New Location</h2>
-
-<div class="form-container">
-    <select id="newType">
-        option value="Emergency & Crisis">Emergency & Crisis</option>
-        <option value="Health & Wellness">Health & Wellness</option>
-        <option value="Food & Basic Needs">Food & Basic Needs</option>
-        <option value="Education & Community Events">Education & Community Events</option>
-        <option value="Community Support & Services">Community Support & Services</option>
-    </select>
-
-    <input type="text" id="newName" placeholder="Name">
-    <input type="text" id="newAddress" placeholder="Address">
-    <input type="text" id="newPhone" placeholder="Phone (optional)">
-    <input type="email" id="newEmail" placeholder="Email (optional)">
-    <button id="addBtn">Add Record</button>
-</div>
-
-<!-- 🔥 ADD FIREBASE SCRIPTS HERE (REQUIRED) -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-
-<!-- 🔥 Your script must load AFTER Firebase -->
-<script src="js/script.js"></script>
-
-</body>
-</html>
-<!-- End of index.html -->
+<!-- NAV BAR -->
+<nav class="navbar">
+  <h2 class="logo">Resource Hub</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+    </ul>
+</nav>
