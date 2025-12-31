@@ -90,34 +90,33 @@ button:hover {
   z-index: 10000;
 }
 
+/* NAV TEXT */
 .nav-left {
   font-size: 20px;
   font-weight: bold;
 }
 
+/* LINKS */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
   margin: 0;
   padding: 0;
-}
-
-.nav-links li {
-  margin: 0;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
 
+/* PAGE CONTENT OFFSET */
 .page-content {
-  margin-top: 80px;
-  padding: 20px;
+  padding-top: 80px; /* pushes content below navbar */
+  padding-left: 20px;
+  padding-right: 20px;
 }
