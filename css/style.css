@@ -116,7 +116,5 @@ button:hover {
 
 /* PAGE CONTENT OFFSET */
 .page-content {
-  padding-top: 80px; /* pushes content below navbar */
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 90px; /* MUST be taller than navbar */
 }
