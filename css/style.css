@@ -70,6 +70,7 @@ button:hover {
     background: #0a71c8;
 }
 
+/* FIXED TOP NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -81,9 +82,40 @@ button:hover {
   color: white;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
-  padding: 0 20px;
-  z-index: 9999; /* VERY important */
+  padding: 0 30px;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+/* LEFT TITLE */
+.nav-left {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* RIGHT LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
