@@ -116,5 +116,6 @@ button:hover {
 
 /* PAGE CONTENT OFFSET */
 .page-content {
-  padding-top: 90px; /* MUST be taller than navbar */
+  padding-top: 200px;
+  background-color: pink;
 }
