@@ -114,6 +114,8 @@ button:hover {
   text-decoration: underline;
 }
 
-body {
-  padding-top: 80px; /* MUST be at least navbar height */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;      /* centers content */
+  padding: 20px;       /* space from edges */
 }
