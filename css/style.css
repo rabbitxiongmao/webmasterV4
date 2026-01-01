@@ -28,10 +28,10 @@ h1, h2 {
 }
 
 table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
     background: white;
-    margin-bottom: 40px;
+    margin: 20px auto 40px auto;
 }
 
 th, td {
@@ -116,7 +116,7 @@ button:hover {
 }
 
 .page-wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;   /* left/right + top/bottom spacing */
 }
