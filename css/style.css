@@ -117,5 +117,5 @@ button:hover {
 .page-wrapper {
   max-width: 1200px;
   margin: 0 auto;      /* centers content */
-  padding: 20px;       /* space from edges */
+  padding-top: 20px;       /* space from edges */
 }
