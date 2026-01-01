@@ -115,6 +115,5 @@ button:hover {
 }
 
 body {
-  margin: 0;
   padding-top: 80px; /* MUST be at least navbar height */
 }
