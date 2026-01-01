@@ -113,3 +113,8 @@ button:hover {
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+body {
+  margin: 0;
+  padding-top: 80px; /* MUST be at least navbar height */
+}
