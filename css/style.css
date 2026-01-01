@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 30px;
+    margin: 0;                /* IMPORTANT */
+    padding-top: 80px;        /* navbar height + breathing room */
     background: #f5f5f5;
 }
 
@@ -116,6 +117,6 @@ button:hover {
 
 .page-wrapper {
   max-width: 1200px;
-  margin: 0 auto;      /* centers content */
-  padding-top: 20px;       /* space from edges */
+  margin: 0 auto;
+  padding: 20px;   /* left/right + top/bottom spacing */
 }
