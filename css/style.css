@@ -114,7 +114,3 @@ button:hover {
 .nav-links a:hover {
   text-decoration: underline;
 }
-
-.page-wrapper {
-  margin: 0 auto;   /* left/right + top/bottom spacing */
-}
