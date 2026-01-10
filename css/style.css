@@ -28,10 +28,10 @@ h1, h2 {
 }
 
 table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     background: white;
-    margin-bottom: 40px;
+    margin: 20px auto 40px auto;
 }
 
 th, td {
