@@ -158,3 +158,11 @@ button:hover {
   margin: 20px auto;
   padding: 15px;
 }
+
+.doc-image {
+  display: block;
+  margin: 20px auto;
+  width: 600px;        /* controls size */
+  max-width: 90%;      /* keeps it responsive */
+  border: 1px solid #ccc;
+}
