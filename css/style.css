@@ -145,3 +145,18 @@ button:hover {
   color: #0056b3;
   font-weight: bold;
 }
+
+.resource-page {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resource-page h1 {
+  margin-bottom: 30px;
+}
+
+.resource {
+  margin: 20px auto;
+  padding: 15px;
+}
