@@ -88,15 +88,23 @@
 <script>
   window.addEventListener("load", function () {
     const hash = window.location.hash.replace("#", "");
-
     if (!hash) return;
 
-    // find category buttons/toggles
-    const buttons = document.querySelectorAll("[data-category]");
-    buttons.forEach(btn => {
-      if (btn.dataset.category === hash) {
-        btn.click();
-      }
-    });
+    const select = document.getElementById("typeFilter");
+    if (!select) return;
+
+    // Map hash values to dropdown option values
+    const map = {
+      health: "Health & Wellness",
+      food: "Food & Basic Needs",
+      emergency: "Emergency & Crisis",
+      education: "Education & Community Events",
+      community: "Community Support & Services"
+    };
+
+    if (map[hash]) {
+      select.value = map[hash];
+      select.dispatchEvent(new Event("change"));
+    }
   });
 </script>
