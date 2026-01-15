@@ -81,36 +81,3 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 <script src="js/script.js"></script>
-
-</body>
-</html>
-
-<script>
-  window.addEventListener("load", function () {
-    const hash = window.location.hash.replace("#", "");
-    if (!hash) return;
-    
-    // Map hash values to dropdown option values
-    const typeMap = {
-      health: "Health & Wellness",
-      food: "Food & Basic Needs",
-      emergency: "Emergency & Crisis",
-      education: "Education & Community Events",
-      community: "Community Support & Services"
-    };
-
-    const typeSelect = document.getElementById("typeFilter");
-    if (!typeSelect) return;
-
-    // Wait until Firebase data finishes loading
-    const waitForData = setInterval(() => {
-      if (select.options.length > 1) {
-        if (typeMap[hash]) {
-          select.value = typeMap[hash];
-          select.dispatchEvent(new Event("change"));
-        }
-        clearInterval(waitForData);
-      }
-    }, 100);
-  });
-</script>
