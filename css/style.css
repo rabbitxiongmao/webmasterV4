@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     background: white;
     margin: 10px auto 40px auto;
@@ -93,7 +93,7 @@ button:hover {
 
 /* NAV TEXT */
 .nav-left {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
